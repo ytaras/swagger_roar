@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = SwaggerRoar::VERSION
   gem.authors       = ["Yura Taras"]
   gem.email         = ["yura.taras@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{DRY in swagger and roar scenario, generate documentation from roar modelss}
+  gem.summary       = %q{Generate swagger model from roar specification}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
