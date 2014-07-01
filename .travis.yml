@@ -9,5 +9,4 @@ deploy:
     secure: fccKfNOKwv/CErzezggpOGhnZ1Cz/B8EL8jp6kBilfDKsyoL+gzmp+Z187feLQlJpVmV/JS3beGGC47Ih61FwmxlsPFv19hQuMp8K5AXuJCUQc8RqdaSl6FP0FbeqWjNgzm2HxgBukvJpyX/2XhtzREvTXKRcTu5vF6IkahJN8U=
   gem: swagger_roar
   on:
-    tags: true
     repo: ytaras/swagger_roar
