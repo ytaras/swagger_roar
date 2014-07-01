@@ -11,16 +11,17 @@ Gem::Specification.new do |gem|
   gem.email         = ["yura.taras@gmail.com"]
   gem.description   = %q{DRY in swagger and roar scenario, generate documentation from roar modelss}
   gem.summary       = %q{Generate swagger model from roar specification}
-  gem.homepage      = ""
+  gem.homepage      = "http://github.com/ytaras/swagger_roar"
+  gem.licenses      = %W(MIT)
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
-  gem.add_development_dependency 'rspec'
-  gem.add_development_dependency 'guard'
-  gem.add_development_dependency 'guard-rspec'
-  gem.add_development_dependency 'rake'
-  gem.add_development_dependency 'grape-entity'
-  gem.add_development_dependency 'roar'
+  gem.add_development_dependency 'rspec', '~> 3.0'
+  gem.add_development_dependency 'guard', '~> 2.6'
+  gem.add_development_dependency 'guard-rspec', '~> 4.2'
+  gem.add_development_dependency 'rake', '~> 10.3'
+  gem.add_development_dependency 'grape-entity', '~> 0.4'
+  gem.add_development_dependency 'roar', '~> 0.12'
 end
