@@ -18,10 +18,11 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
-  gem.add_development_dependency 'rspec', '~> 3.0'
-  gem.add_development_dependency 'guard', '~> 2.6'
-  gem.add_development_dependency 'guard-rspec', '~> 4.2'
-  gem.add_development_dependency 'rake', '~> 10.3'
-  gem.add_development_dependency 'grape-entity', '~> 0.4'
-  gem.add_development_dependency 'roar', '~> 0.12'
+  gem.add_development_dependency 'rspec', '>= 3.0'
+  gem.add_development_dependency 'guard', '>= 2.6'
+  gem.add_development_dependency 'guard-rspec', '>= 4.2'
+  gem.add_development_dependency 'rake', '>= 10.3'
+  gem.add_development_dependency 'grape-entity', '>= 0.4'
+  gem.add_development_dependency 'roar', '>= 0.12'
+  gem.required_ruby_version = '>= 1.9.3'
 end
