@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/ytaras/swagger_roar.svg?branch=master)](https://travis-ci.org/ytaras/swagger_roar)
+[![Dependency Status](https://gemnasium.com/ytaras/swagger_roar.svg)](https://gemnasium.com/ytaras/swagger_roar)
 # SwaggerRoar
 
 TODO: Write a gem description
