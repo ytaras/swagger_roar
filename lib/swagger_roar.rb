@@ -4,12 +4,19 @@ module SwaggerRoar
   def documentation
     Hash[
       attrs_hash.map { |k, v|
-        [k.to_sym, v[:documentation]]
+        [key_to_doc_key(k), v[:documentation]]
       }
     ]
   end
 
   private
+
+  def key_to_doc_key(k)
+    return unless representable_attrs.has_key? k
+    definition = representable_attrs[k]
+    return definition[:as].evaluate({}).to_sym if definition[:as].present?
+    k.to_sym
+  end
 
   def attrs_hash
     a = representable_attrs

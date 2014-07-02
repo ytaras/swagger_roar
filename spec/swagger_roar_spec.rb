@@ -8,5 +8,8 @@ describe SwaggerRoar do
     it 'for single property mapping' do
       expect(SinglePropertyMapping).to generate_swagger_documentation
     end
+    it 'for renamed property mapping' do
+      expect(RenamedPropertyMapping).to generate_swagger_documentation
+    end
   end
 end

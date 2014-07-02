@@ -16,6 +16,6 @@ RSpec::Matchers.define :generate_swagger_documentation do
   end
 
   failure_message do |m|
-    "expected that Roar doc would be #{roar_doc(m)}, but was #{grape_doc(m)}"
+    "expected that Roar doc would be #{grape_doc(m)}, but was #{roar_doc(m)}"
   end
 end

@@ -1,1 +1,2 @@
 require "sample_mappings/single_propery_mapping"
+require "sample_mappings/renamed_property_mapping"
