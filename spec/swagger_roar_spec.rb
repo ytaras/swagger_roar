@@ -1,20 +1,12 @@
 require "spec_helper"
 require "grape-entity"
 require "roar/representer/json"
+require "sample_mappings"
 
 describe SwaggerRoar do
   describe 'should generate documentation' do
-    it 'for simple entity' do
-      class TestEntity < Grape::Entity
-        expose :title, documentation: {type: "String", desc: "Status update text"}
-      end
-      class TestRoarRepresenter
-        include Roar::Representer::JSON
-        extend SwaggerRoar
-
-        property :title, documentation: {type: "String", desc: "Status update text"}
-      end
-      expect(TestRoarRepresenter.documentation).to eq(TestEntity.documentation)
+    it 'for single property mapping' do
+      expect(SinglePropertyMapping).to generate_swagger_documentation
     end
   end
 end
